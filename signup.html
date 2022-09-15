@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>New Member Registration & Signup - Chess.com</title>
+    <link id="favicon" rel="icon" type="image/x-icon" href="poze/favicon.ico">
+</head>
+<body class="text-white">
+    <div class="container-fluid ps-0 mx-auto">
+        <div class="row">
+            <!--Meniu navigare-->
+            <div class="col-1">
+                <div class="nav-sidebar">
+                    <div class="nav-top">
+                        <ul class="li-hov">
+                            <li><a id="logo"  href="index.html"></a></li> 
+                            <li class="nav-li"><a class="sprites play"  href="#"><span class="nav-link-text">Play</span></a>
+                                <ul class="text-white dropdown-menu-css">
+                                    <li class="sprites play"><a href="#"><span class="nav-link-text">Play</span></a></li>
+                                    <li class="sprites live"><a href="#"><span class="nav-link-text">Live Chess</span></a></li>
+                                    <li class="sprites computer"><a href="#"><span class="nav-link-text">Computer</span></a></li>
+                                    <li class="sprites tour"><a href="#"><span class="nav-link-text">Tournaments</span></a></li>
+                                    <li class="sprites variants"><a href="#"><span class="nav-link-text">Variants</span></a></li>
+                                    <li class="sprites leaderboard"><a href="#"><span class="nav-link-text">Leaderboard</span></a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-li"><a id="puzzles" class="sprites"  href="#"> <span class="nav-link-text">Puzzles</span></a>
+                                <ul class="text-white dropdown-menu-css">
+                                    <li class="sprites puzzles"><a href="#"><span class="nav-link-text">Puzzles</span></a></li>
+                                    <li class="sprites puzzle-rush"><a href="#"><span class="nav-link-text">Puzzle Rush</span></a></li>
+                                    <li class="sprites puzzle-battle"><a href="#"><span class="nav-link-text">Puzzle Battle</span></a></li>
+                                    <li class="sprites puzzle-daily"><a href="#"><span class="nav-link-text">Daily Puzzle</span></a></li>
+                                    <li class="sprites puzzle-custom"><a href="#"><span class="nav-link-text">Custom Puzzle</span></a></li>
+                                </ul>
+                            </li>
+                            <li><a id="learn" class="sprites" href="chess.html"><span class="nav-link-text">Learn</span></a></li>
+                            <li><a id="watch" class="sprites" href="#"><span class="nav-link-text">Watch</span></a></li>
+                            <li><a id="news"class="sprites" href="#"><span class="nav-link-text">News</span></a></li>
+                            <li><a id="social"class="sprites" href="#"><span class="nav-link-text">Social</span></a></li>
+
+                            <a id="sign-up" class="nav-btn black-btn" href="signup.html">Sign up</a>
+                            <a class="nav-btn signup-lg black-btn" href="signup.html"><i class="bi bi-person-plus-fill"></i></a>
+                            <a id="log-in" class="nav-btn green-btn" href="login.html">Log in</a>
+                            <a class="nav-btn login-lg green-btn" href="login.html"><i class="bi bi-box-arrow-in-right"></i></a>
+
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--Continut principal-->
+            <div class="col mt-5">
+                <div class="row">
+                    <div class="col-9 m-auto">
+                        <div class="row">
+                            <div class="col-8 bg-content">
+                                <div class="row">
+                                    <div class="py-4 px-5">
+                                        <div class="col-12 text-center">
+                                            <h1 class="fw-bolder mb-4">Join Now — It’s Free & Easy! </h1>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-10 my-2">
+                                                <form action="login.html">
+                                                    <div class="mb-3 row"><label for="username" class="col-sm-4 col-form-label">Username</label>
+                                                        <div class="col-sm-8"><input class="form-control bg-color text-white" type="text" id="username" name="username"></div>
+                                                    </div>
+                                                    <div class="mb-3 row"><label for="email" class="col-sm-4 col-form-label">Email</label>
+                                                        <div class="col-sm-8"><input class="form-control bg-color text-white" type="email" id="email" name="email"></div>
+                                                    </div>
+                                                    <div class="mb-3 row"><label for="password" class="col-sm-4 col-form-label">Password</label>
+                                                        <div class="col-sm-8"><input class="form-control bg-color text-white" type="password" id="password" name="password"></div>
+                                                    </div>
+                                                    <div class="mb-3 row"><label for="skill-level" class="col-sm-4 col-form-label">Skill Level</label>
+                                                        <div class="col-sm-8">
+                                                            <select class="form-select bg-color text-white" name="skill-level" id="skill-level">
+                                                                <option value="new to Chess">New to Chess</option>
+                                                                <option value="beginner">Beginner</option>
+                                                                <option value="intermediate">Intermediate</option>
+                                                                <option value="advanced">Advanced</option>
+                                                                <option value="expert">Expert</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row"> 
+                                                        <div class="col-12 d-flex justify-content-end ">
+                                                            <a href="login.html"><button class="btn btn-lg px-5 py-2 text-white green-btn button" id="submit" disabled type="submit"><p class="fs-6 px-4 py-2 text-center m-0">Create Your FREE Account</p></button></a>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="row text-center my-2">
+                                                <div class="col-3 mx-5"></div>
+                                                <div class="col-3 mx-4"><p class="m-0">Or sign up using...</p></div>
+                                                <div class="col-3"></div>
+                                            </div>
+                                            <div class="row">
+                                                
+                                                <div class="col text-center ms-5 mb-4">
+                                                    <a href="#"><span class="fs-4 px-1 ms-5"><i class="bi bi-facebook"></i></span>Facebook</a>
+                                                    <a class="link-danger ms-2" href="#"><span class="fs-4 px-1"><i class="bi bi-google"></i></span>Google</a>
+                                                    <a class="link-light ms-2" href="#"><span class="fs-4 px-1"><i class="bi bi-apple"></i></span>Apple ID</a>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <p class="fw-lighter small text-center ms-5 ps-5">I accept the site <span><a class="link-info" href="#">Terms of Service</a></span> and agree to the <span><a class="link-info" href="#">Privacy Policy</a></span>. </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <!--Col dreapta-->
+                            <div class="col-4">
+                                <div class="row">
+                                    <div class="col position-relative">
+                                        <img class="img img-fluid rounded" src="https://www.chess.com/dynboard?fen=rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR&size=2" alt="chess-board">
+                                        <div class="bg-content rounded position-absolute top-50 start-50 translate-middle pe-3 ps-1 pt-1">
+                                            <h2><span><i class="bi bi-person-fill"></i></span> 46,923</h2>
+                                            <p>New Members Today</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col mt-5">
+                                        <div class="bg-color rounded p-3">
+                                            <h3><span><i class="bi bi-shield-fill-check"></i></span>Privacy Guaranteed </h3>
+                                            <p>Your personal info is safe and will not be shared!</p>
+                                            <p>See our complete Privacy Policy <a class="link-info" href="#">here</a>.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!--Footer-->
+                <div class="row mt-5 pt-5">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-2"></div>
+                            <div class="col-4 nav-footer-component small">
+                                <a class="footer-text " href="#">Help</a>
+                                <a class="footer-text" href="#">Why join?</a>
+                                <a class="footer-text" href="#">About</a>
+                                <a class="footer-text" href="#">Jobs</a>
+                                <a class="footer-text" href="#">Developers</a>
+                                <a class="footer-text" href="#">User Agreement</a>
+                                <a class="footer-text" href="#">Privacy</a>
+                                <a class="footer-text" href="#">Fair Play</a>
+                                <a class="footer-text" href="#">Community</a>
+                                <a class="footer-text" href="#">Chess.com Ⓒ 2022</a>
+                            </div>
+                            <div class="col-4 nav-footer-component mx-3">
+                                <i class="bi bi-apple"></i>
+                                <i class="bi bi-robot"></i> 
+                                <i class="bi bi-facebook"></i>
+                                <i class="bi bi-twitter"></i>
+                                <i class="bi bi-youtube"></i>
+                                <i class="bi bi-twitch"></i>
+                                <i class="bi bi-instagram"></i>
+                                <i class="bi bi-discord"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--se termina footer ul-->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

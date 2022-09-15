@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Login - Chess.com</title>
+    <link id="favicon" rel="icon" type="image/x-icon" href="poze/favicon.ico">
+</head>
+<body class="text-white">
+    <div class="container-fluid">
+        <div class="row my-3">
+            <div class="col-4 m-auto">
+                <a class="m-auto" id="logo" href="index.html"></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 bg-content rounded m-auto p-5 pb-2">
+                <form action="#">
+                    <input type="text" id="email"  class="form-control bg-color text-white border border-dark" placeholder="Enter: mail@example.com" required>
+                    <div class="position-relative mt-3">
+                        <input id="pass-input" type="password" class="form-control bg-color text-white border border-dark" placeholder="Enter: parola" required>
+                        <i class="bi bi-eye position-absolute top-50 end-0 translate-middle-y pe-2" id="toggle-password-visibility"></i>
+                    </div>
+                </form>
+                <div class="row mt-2">
+                    <a href="#" class="link-secondary small"> Forgot Password?</a>
+                </div>
+                <div class="row">
+                    <div class="col-11 m-auto">
+                        <div class="row"><button type="button" id="btnlogin" class="btn btn-lg mt-3 mb-1 py-3 px-2 fw-bolder text-white shadow-lg green-btn button">Log In</button></div>
+                    </div>
+                </div>
+                <div class="row my-2">
+                    <div class="col d-flex">
+                        <span class="flex-grow-1 bg-primary hr-line bg-secondary"></span>
+                        <span class="mx-1">or connect with</span>
+                        <span class="flex-grow-1 bg-primary hr-line bg-secondary"></span>
+                    </div>
+                </div>
+                <div class="row my-2">
+                    <div class="col d-flex flex-column align-items-center">
+                        <a  href="user.html"><span class="fs-4 px-1"><i class="bi bi-facebook"></i></span>Facebook</a>
+                        <a class="link-danger pe-3" href="#"><span class="fs-4 px-1"><i class="bi bi-google"></i></span>Google</a>
+                        <a class="link-light pe-2" href="#"><span class="fs-4 px-1"><i class="bi bi-apple"></i></span>Apple ID</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="row">
+            <div class="col-3 rounded-bottom m-auto scnd-background">
+                <div class="row p-4">
+                    <span class="text-center text-secondary">New? <a class="link-info" href="signup.html">Sign up - it's FREE!</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 m-auto text-center">
+                <a href="#"><span class="fs-6 fw-lighter text-secondary">Help |</span></a> 
+                <a href="#"><span class="fs-6 fw-lighter text-secondary"> Terms & Privacy |</span></a> 
+                <a href="#"><span class="fs-6 fw-lighter text-secondary">Chess.com © 2022 </span></a> 
+            </div>
+        </div>
+    </div>
+    <script src="script_login.js"></script>
+</body>
+</html>

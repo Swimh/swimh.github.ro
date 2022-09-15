@@ -1,0 +1,432 @@
+@use '_variables.scss';
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    background-color: #312e2b;
+}
+
+.col-1 {
+    width: 12%;
+}
+
+/*NAVIGATION BAR*/
+
+.nav-sidebar {
+    background-color:#262421;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    height: 100%;
+}
+.nav-top li {
+    list-style: none;
+    padding: .8rem 3rem .8rem 1.5rem;
+}
+.nav-top ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav-link-text, .p-text {
+    color: hsla(0,0%,100%,.8);
+    font-weight: bolder;
+}
+
+.nav-btn {
+    color: #fff;
+    text-align: center;
+    border-radius: 0.3rem;
+    margin:1rem .8rem 0;
+    padding: 10px;
+    display: block;
+}
+
+#log-in {
+    border: none;
+    margin-top: 8px;
+}
+
+#sign-up {
+    border: none;
+}
+
+
+
+.signup-lg, .login-lg{
+    display: none;
+}
+
+/*css dropdown*/
+
+.dropdown-menu-css {
+    position: absolute;
+    top: 0%;
+    left: 11.188rem;
+    height: 100vh;
+    background: #26211b;
+    width: 20rem;
+    display: none;
+}
+
+.dropdown-menu-css li {
+    padding-bottom: 0%!important;
+}
+
+.nav-li:hover .dropdown-menu-css {
+    display: block;
+}
+
+/*Main Content*/
+
+.bg-content {
+    background-color:#262421;
+}
+
+.bg-color{
+    background-color: #312e2b;
+}
+
+a {
+    text-decoration: none;
+}
+
+button, .button{
+    text-shadow: 0 .1rem 0 var(--textShadowColor,rgba(0,0,0,.4));
+    line-height: 1.5rem;
+    border-radius: 0.8rem 0.8rem 1rem 1rem;
+}
+
+.black-btn {
+    background-color: hsla(0,0%,100%,.08);
+    border-bottom: solid rgba(255, 255, 255, 0.048) thick;
+}
+
+.green-btn {
+    background-color: #7fa650;
+    border-bottom: solid #537133 thick;
+}
+
+.badge {
+    background-color: #b33430;
+    font-size: x-small;
+    font-weight: 700;
+    line-height: 1;
+    margin-right: .7rem;
+    padding: .2rem .3rem;
+    border-radius: .3rem;
+}
+
+.op {
+    opacity: 50%;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+/*Footer*/
+
+ .footer-text {
+    color: hsla(0,0%,100%,.65); /* culoare text secundar, de adaugat la restul elementelor */
+
+} 
+
+/* Login  */
+
+.hr-line {
+    height: .060rem;
+    margin-top: 15px;
+}
+
+.scnd-background{
+    background-color: #0c0b0b;
+}
+
+.third-bg {
+    background-color: #262421;
+}
+
+/*-----CHESS-------*/
+
+.sidebar {
+    height: 500px;
+    scrollbar-width: thin;
+}
+
+.board {
+	display: flex;
+	flex-wrap: nowrap;
+	width: 600px;
+	height: 600px;
+}
+
+.color1 {
+    background-color: #272522;
+}
+
+.color2 {
+    background-color: #1f1e1b;
+}
+
+.header-circle {
+    height: 95px;
+    border-radius: 0 0 60% 60%;
+}
+
+.svg-header {
+    height: 64px;
+    width: 69px;
+}
+
+.svg {
+    height: 50px;
+}
+
+.draggable {
+	cursor: pointer;
+    width: 100%;
+}
+
+	
+table {
+	padding: 2px;
+	border-collapse: collapse;
+}
+
+td {
+	text-align: center;
+	width: 70px;
+	height: 70px;
+	padding: 0;
+	}
+
+.mirror  {
+  transform: rotate(180deg);
+}
+
+th {
+	padding: 5px;
+	background-color: #312e2b;
+	color: #babab9;
+    text-align: center;
+}
+
+/*-----------------PSEUDO-CLASSES------------------------*/
+/*MAIN*/
+
+.black-btn:hover {
+    background-color: hsla(0,0%,100%,.16);
+}
+
+.green-btn:hover {
+    background-color: #95bb4a;
+    border-bottom: solid #537133 thick;
+}
+
+a:hover {
+    color: white;
+}
+
+/*Chess-board*/
+
+tr:nth-child(even) td:nth-child(even), 
+tr:nth-child(odd) td:nth-child(odd) {
+  background-color: #eeeed2;
+}
+
+tr:nth-child(odd) td:nth-child(even), 
+tr:nth-child(even) td:nth-child(odd) {
+  background-color: #769656;
+}
+
+.side-menu:hover {
+    background-color: #0c0b0b;
+}
+
+/* SIGN-UP  */
+
+
+input:focus, input.form-control:focus {
+    background-color: #312e2b;
+}
+
+/*USER*/
+
+textarea:focus{
+    background-color: #312e2b!important;
+}
+
+ul li:hover{
+    background-color: #221e18;
+}
+
+/*Sprites*/
+.sprites::before {
+    background: url(poze/nav-alt.webp.png) no-repeat; 
+    content: "";
+    display: inline-block;
+    margin-right: 1.2rem;
+}
+
+#logo {
+    background: url(poze/nav-alt.webp.png) no-repeat -27px -1px;
+    width: 110px;
+    height: 30px;
+    display: block;
+    margin: 1rem 0 .5rem;
+    padding-bottom: .3rem;
+    
+}
+
+.play::before {
+    background-position: -26px -80px;
+	width: 24px;
+	height: 25px;
+}
+
+#puzzles::before {
+    background-position: -25px -117px;
+	width: 26px;
+	height: 25px;
+}
+
+#learn::before {
+    background-position: -25px -155px;
+	width: 26px;
+	height: 23px;
+}
+
+#watch::before {
+    background-position: -25px -194px;
+	width: 26px;
+	height: 19px;
+}
+
+#news::before {
+    background-position:-26px -340px;
+	width: 24px;
+	height: 23px;
+}
+
+#social::before {
+    background-position: -25px -228px;
+	width: 26px;
+	height: 25px;
+}
+
+.live::before{
+    background-position: -1px -23px;
+    width: 20px;
+	height: 20px;
+}
+
+.computer::before{
+    background-position: 0px -65px;
+    width: 21px;
+    height: 22px;
+}
+
+.tour::before{
+    background-position: 0px -88px;
+    width: 22px;
+    height: 23px;
+}
+
+.variants::before{
+    background-position: 0px -1386px;
+    width: 24px;
+    height: 21px;
+}
+
+.leaderboard::before{
+    background-position: 0px -814px; 
+    width: 23px;
+    height: 23px;
+}
+
+.puzzles::before{
+    background-position:-1px -133px;
+	width: 20px;
+	height: 20px;
+}
+.puzzle-rush::before{
+    background-position: 0 -1210px;
+	width: 22px;
+	height: 22px;;
+}
+.puzzle-battle::before{
+    background-position: 0 -1298px;
+	width: 22px;
+	height: 21px;
+}
+
+.puzzle-daily::before{
+    background-position: -1px -771px; 
+    width: 21px;
+    height: 22px;
+}
+
+.puzzle-custom::before{
+    background-position: -1px -1542px; 
+    width: 23px;
+    height: 20px;
+}
+
+/*Media Query*/
+/*nav-Lg*/
+
+@media (max-width: 992px){
+    .nav-sidebar{
+        width:70px;
+    }
+    a .nav-none{
+        display: none;
+    }
+    #logo {
+        background: url(poze/nav-alt.webp.png) no-repeat -27px -38px;
+        width: 21px;
+	    height: 30px;
+        display: block;
+        margin: 1rem 0 .5rem;
+        padding-bottom: .3rem;
+       
+
+    }
+    .dropdown-menu-css {
+        position: absolute;
+        top: 0%;
+        left: 4.3rem;
+        height: 100vh;
+        background: #26211b;
+        width: 20rem;
+        display: none;
+    }
+    .signup-lg {
+        display: block;
+        background-color: hsla(0,0%,100%,.08);
+    }
+    #sign-up {
+        display: none;
+    }
+    .login-lg {
+        display: block;
+        background-color: #7fa650;
+    }
+    #log-in {
+        display: none;
+    }
+    
+    .layout-component {
+        padding: 0;
+        margin: 0;
+    }
+}
+@media (max-width: 1200px){
+    .layout-component{
+        padding: 0;
+        margin: 0;
+    }
+}
